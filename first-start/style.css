@@ -1,0 +1,52 @@
+h1 {
+  color: red;
+}
+
+
+h1 + p {
+    font-size: 200%;
+}
+
+h1 + p span {
+    color: red;
+}
+
+li  {
+    list-style-type: "\1F44D";
+}
+
+li.special {
+    color: blue;
+    font-weight: bold;
+}
+
+li em {
+    color: rgb(240, 30, 170);
+  }
+
+a:link {
+    color: yellow;
+    font-weight: bold;
+}
+
+a:visited {
+    color: green;
+    font-weight: bold;
+
+}
+
+a:hover {
+    text-decoration: none;
+  }
+
+  /* <article> 내부의 <p> 안에 있는 모든 <span> 을 선택합니다  */
+/* article p span { ... } */
+
+/* <h1> 바로 뒤에 오는 <ul> 바로 뒤의 모든 <p> 를 선택합니다  */
+/* h1 + ul + p { ... } */
+
+body h1 + p .special {
+    color: orange;
+    background-color: black;
+    padding: 5px;
+  }
